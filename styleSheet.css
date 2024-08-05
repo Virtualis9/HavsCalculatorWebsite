@@ -505,8 +505,7 @@ html {
           }
   
       .cal1{
-          /* padding:12px;
-          display:inline-block; */
+          flex-wrap: wrap;
       }
   
       .timeontoolh4{
@@ -540,7 +539,8 @@ html {
           }
   
           .cal1{
-              padding:12px;
+            flex-wrap: wrap;
+
           }
   
           .timeontool{

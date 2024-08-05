@@ -1,0 +1,578 @@
+html {
+    height: 100%;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #CED8E7;
+  }
+  
+  
+  
+  
+  button{
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 10px;
+      font-weight: bold;
+      background-color: #99ff33;
+      font-size: 20px
+  }
+  
+  
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-item: right;
+    justify-cone
+  
+  }
+  
+  .HeadertitleDiv{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+      letter-spacing: 1px;
+      text-align: center;
+  
+  }
+  
+  .Headertitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+    font-size: 60px;
+    letter-spacing: 1px;
+  }
+  
+  .headtitlespan{
+      color: red;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+      letter-spacing: 1px;
+      padding:15px;
+  
+  }
+  
+  .Explanation{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      margin-bottom: 50px;
+      margin-top: 50px;
+      text-align: center;
+      letter-spacing: 1px;
+      line-height: 25px;
+  }
+  
+  .container1{
+      margin:auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; 
+      height:200px;
+      width: 1000px;
+      border: 1px solid black;
+      border-radius: 15px;
+      background-color: #fff;
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 50px;
+  
+  }
+  
+  .cal1{
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin:auto;
+  
+  }
+  
+  .maglabel{
+      padding: 10px;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-right: 15px;
+      margin-left: 25px;
+  
+  
+  }
+  
+  .pot{
+      display: none;
+  }
+  
+  .vibrationinput1,
+  .vibrationinput2{
+      padding: 10px;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 150px;
+      margin:auto;
+  
+  }
+  
+  .tooltip{
+      align-items: center;
+      justify-content: center;
+      /* border: 1px solid black; */
+      border-radius: 50%;
+      height: 12.5px;
+      width: 12.5px;
+      /* background-color: black; */
+      color: white;
+      padding: 5px;
+      margin-left: 5px;
+  
+  }
+  
+  .tooltipchild{
+      display: none;
+  }
+  
+  .pointstip{
+      align-items: center;
+      justify-content: center;
+      /* border: 1px solid black; */
+      border-radius: 50%;
+      height: 12.5px;
+      width: 12.5px;
+      /* background-color: black; */
+      color: white;
+      padding: 5px;
+  
+  
+  }
+  
+  .pointstipchild{
+      display:none;
+  }
+  
+  
+  
+  .timelabel{
+      padding: 10px;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-left: 15px;
+  }
+  
+  .totaldiv{
+      flex-direction: row;
+      margin:auto;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .totalLabel{
+      margin-left:50px;
+  }
+  
+  .totaloutput{
+      padding: 10px;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 150px;
+      margin-left: 50px;
+      margin
+  
+  }
+  
+  .totalButtonDiv{
+      flex-direction: row;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+      margin:auto;
+  }
+  
+  .calbutton{
+      padding: 10px;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      margin-top:20px;
+  }
+  
+  .timeontool{
+      margin:auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; 
+      height: 230px;
+      width: 1000px;
+      border: 1px solid black;
+      border-radius: 15px;
+      background-color: #fff;
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 50px;
+  }
+  
+  .timeontoolh4{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; 
+      margin:auto;
+  
+  }
+  
+  .timeOnToolLabel{
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; 
+      margin:auto;
+  
+  }
+  
+  .timeOnToolInputDiv{
+      margin:auto;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding:10px;
+  
+  }
+  
+  .timeOnToolInput{
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 150px;
+      margin:auto;
+      padding:10px;
+  
+  }
+  
+  .ALVOutputDiv{
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin:auto;
+  }
+  
+  .ALVOutput{
+      font-weight: bold;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 150px;
+      padding: 10px;
+      color: black;
+      text-align: center;
+  }
+  
+  .timeOnToolDiv{
+      display: felx;
+      flex-direction: column;
+  }
+  
+  .timeOnToolbuttonDiv{
+      display: felx;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+  
+  }
+  
+  .timeOnToolbutton{
+      margin: auto;
+      display: felx;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      margin-left: 45px;
+  }
+  
+  .form {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      margin-top: 10px;
+      /* border: 1px solid black; */
+      padding: 10px 15px 15px 15px;
+      border-top:1px solid black;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  
+  
+  
+  
+  .formH2 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10px;
+      text-weight: bold;
+      color: black;
+      letter-spacing: -1px;
+  }
+  
+  .formP1{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10px;
+      text-weight: bold;
+      color: black;
+      letter-spacing: 1px
+  
+  
+  }
+  
+  .formUl{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10px;
+      text-weight: bold;
+      color: black;
+      list-style-type: none;
+      letter-spacing: 1px
+  }
+  
+  .formLi{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+      color: black;
+      list-style-type: none;
+  }
+  
+  .formp2{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10px;
+      text-weight: bold;
+      color: black;
+      letter-spacing: 1px;
+      line-height: 1.8;
+  }
+  
+  .formInput{
+      display:flex;
+      padding: 10px;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      text-align: center;
+      width: 284px;
+      margin:auto;
+  }
+  
+  .EmailError{
+      display: none;
+      margin-top: 50px;
+  }
+  
+  .buttonsubmit{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      margin:auto;
+      margin-top: 30px;
+      padding-top:10px;
+      margin-bottom: 15px;
+  }
+  
+  @media (max-width: 1002px) {
+      /* CSS rules for screens smaller than 600px */
+      body{
+        display:flex;
+        flex-direction:column;
+         justify-content: center;
+      }
+  
+      .Explanation{
+          display:inline-block;
+          text-align: center;
+          padding:12px;
+  
+      }
+  
+      .container1{
+          display:grid;
+          gap: 15px;
+          height:225px;
+          width: 500px;
+          border: 1px solid black;
+          border-radius: 15px;
+          background-color: #fff;
+          box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+          margin-bottom: 50px;
+          /* flex-wrap: wrap; */
+          flex:1
+  
+      }
+  
+      .cal1{
+          margin:auto;
+          margin-top:5px;
+          padding:12px;
+          flex:1
+      }
+  
+      .cal2{
+          margin:auto;
+          margin-top:5px;
+          padding-right:20px;
+          flex:1
+      }
+  
+      .totaldiv{
+          margin:auto;
+          margin-top:5px;
+          padding-right:40px;
+          flex:1
+      }
+  
+  
+  
+      .calbutton{
+          margin:auto;
+          margin-bottom: 10px;
+      }
+  
+      .timeontool{
+  
+          flex:1;
+          width:500px;
+          height:250px;
+      }
+  
+      .timeontoolh4{
+          margin-top: 10px;
+      }
+  
+      .timeOnToolLabel{
+          margin-top: 10px
+      }
+  
+    }
+  
+    @media (max-width: 645px) {
+      .Explanation{
+          display:inline-block;
+          text-align: center;
+          padding:12px;
+  
+      }
+  
+      .HeadertitleDiv{
+          font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+          text-align: center;
+          display:inline-block;
+          }
+      .Headertitle{
+          display:inline-block;
+          font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+          text-align: center;
+          }
+  
+      .cal1{
+          /* padding:12px;
+          display:inline-block; */
+      }
+  
+      .timeontoolh4{
+          display:inline-block;
+          text-align: center;
+          padding:12px;
+      }
+  
+      .maglabel{
+          padding-right: 5px;
+      }
+  
+  
+      }
+  
+  
+  
+      @media (max-width: 515px) {
+  
+          .Explanation{
+              display:inline-block;
+              text-align: center;
+              padding:12px;
+  
+          }
+  
+          .container1{
+              width: 250px;
+  
+  
+          }
+  
+          .cal1{
+              padding:12px;
+          }
+  
+          .timeontool{
+              width: 250px;
+  
+          }
+  
+          .timeontoolh4{
+              display:inline-block;
+              text-align: center;
+              padding:12px;
+          }
+      }
+  
+  
+  
+      @media (max-width: 340px) {
+          .form{
+              display:inline-block;
+              text-align: center;
+              padding:12px;
+          }
+  
+          .maglabel{
+              display:inline-block;
+              text-align: center;
+          }
+  
+  
+      }
+  
+  
+  
+  
+  

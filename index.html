@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styleSheet.css">
+    <title>Havs Calculator</title>
+</head>
+<body>
+    <div class="HeadertitleDiv">
+        <h1 class="Headertitle"> 
+            Free  <span class="headtitlespan">  HAVS  </span>  Calculator
+        </h1>
+    </div>
+
+
+
+    <h4 class="Explanation">
+        Calculating your hand-arm vibration syndrome (HAVS) exposure can be a pain and complicated.
+        <br>
+        Use my FREE tool below to help you stay within safe limits and protect your well-being.
+        <br>
+        This will help you stay compliant with health and safety laws. 
+        <br>
+
+    </h4>
+
+    <div class="container1">
+        <div class="cal1">
+            <label class="maglabel">
+                Enter magnitude rating 
+            </label><br>
+            <span class="tooltip">❓
+                <span class="tooltipchild">Having Trouble Finding Your Tools magnitude (Vibration) heres some tips to help
+                    <ul>
+                        <li>
+                            Check the user manual or technical specifications.
+                        </li>
+                    </ul>
+                </span>
+            </span>
+            <input type="text" id="Vibration" placeholder="Enter magnitude here." class="vibrationinput1">
+            <input type="text" id="pot" placeholder="You should not see this" class="pot">
+        </div>
+
+       <div class="cal2">
+            <div>
+                <label class="timelabel">
+                    Total trigger time
+                </label><br>
+                <span class="pointstip">❓
+                    <span class="pointstipchild">
+                        <ul>
+                            <li>
+                                your are allowed 100 points before you need to take legal action of reducing your havs!
+                            </li>
+                            <li>
+                                You are not allowed to exceed 400 points!
+                            </li>
+                        </ul>
+                    </span>
+                </span>
+                <input type="text" id="Time" placeholder="Enter time in mins here." class="vibrationinput2">
+            </div>
+        </div>
+        <div class="totaldiv">
+            <label class="totalLabel">Total points</label><br>
+            <input class="totaloutput"type="text" id="total" id="result" disabled> 
+       </div>
+
+       <div class="totalButtonDiv">
+        <button class="calbutton" onclick="calculate('Vibration' , 'Time', 'total' )">Calculate</button>
+       </div>
+
+
+    </div>
+    <div class="timeontool">
+        <h4 class="timeontoolh4">Want to know how long you can safely use your tool?</h4>
+        <div class="timeOnToolDiv">
+            <label class="timeOnToolLabel">
+                Enter magnitude rating 
+            </label>
+                <div class="timeOnToolInputDiv">
+                    <input class="timeOnToolInput" type="text" id="ALVInput" placeholder="Tools Magnatude" >  
+                </div>
+                <div class="ALVOutputDiv">
+                    <output class="ALVOutput" id="ALVOutput" disabled>
+                </div>
+                <div class="timeOnToolbuttonDiv">
+                    <button class="timeOnToolbutton" onclick="ALV('ALVInput', 'ALVOutput')">Calculate</button>
+                </div>
+        </div>
+    </div>
+
+
+</body>
+<footer>
+    <form class="form">
+        <h2 class="formH2"> Do You Own a Company That Uses Vibration tools?</h2>
+        <p class="formP1">
+            We are offering a full SaaS (Software as a Service) solution for your company to stay compliant with HSE regulations.
+
+            You'll be able to:
+        </p>
+        <ul class="formUl">
+            <li class="formLi">
+                Keep track of your employees' HAVS in real time!
+            </li>
+            <li class="formLi">
+            Add and remove tools as needed.
+            </li>
+            <li class="formLi">
+            Have a fully functional admin dashboard you control! 
+            </li>
+        </ul>
+            <p class="formp2">
+                Want to know more? <br>
+                Enter your email here and we will get back to you as soon as possible!
+            </p>
+                <input class="formInput" type="email" id="email" placeholder="Type your email here">
+            <span class="EmailError">
+                Invalid Email
+            </span>
+        <button class="buttonsubmit"type="submit">Send</button>
+
+</form>
+</footer>
+</html>
